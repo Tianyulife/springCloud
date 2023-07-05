@@ -1,0 +1,27 @@
+server:
+  port: 3377
+
+spring:
+  application:
+    name: nacos-config-client
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8849
+        username: nacos
+        password: nacos
+        namespace: 88e5e192-8948-49eb-8f60-5dced8889300
+        group: DEV_GROUP
+      discovery:
+        server-addr: localhost:8849
+        username: nacos
+        password: nacos
+  config:
+    import:
+      - optional:nacos:nacos-config-client-dev.yaml?refresh=true #有这个完成依赖注入服务才能起来
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+  show-actuator: true
