@@ -18,7 +18,7 @@ spring:
         password: nacos
   config:
     import:
-      - optional:nacos:nacos-config-client-dev.yaml?refresh=true #有这个完成依赖注入服务才能起�?
+      - optional:nacos:nacos-config-client-dev.yaml?refresh=true #有这个完成依赖注入服务才能起来
 springdoc:
   api-docs:
     path: /api-docs

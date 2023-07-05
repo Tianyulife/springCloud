@@ -22,8 +22,8 @@ springdoc:
 
 eureka:
   client:
-    register-with-eureka: true #true不需要配置，已经自动配置Ok 向注册中心注�?
-    fetch-registry: true # 不需要配置，已经自动配置Ok 可能会抓取其他服务，�?以设置为true
+    register-with-eureka: true #true不需要配置，已经自动配置Ok 向注册中心注册
+    fetch-registry: true # 不需要配置，已经自动配置Ok 可能会抓取其他服务，所以设置为true
     service-url:
       defaultZone: http://localhost:7001/eureka  #注册地址
 
