@@ -7,7 +7,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://159.75.81.148:3306/springCloud
+    url: jdbc:mysql://127.0.0.1:3306/springCloud
     username: ty
     password: 1234qwer
 mybatis-plus:
@@ -26,7 +26,7 @@ springdoc:
 eureka:
   client:
     register-with-eureka: true #true不需要配置，已经自动配置Ok
-    fetch-registry: true # 不需要配置，已经自动配置Ok 可能会抓取其他服务，所以设置为true
+    fetch-registry: true # 不需要配置，已经自动配置Ok 可能会抓取其他服务，�?以设置为true
     service-url:
       defaultZone: http://localhost:7001/eureka  #注册地址
 
